@@ -1,0 +1,22 @@
+Número da Linha,Nome do Motorista,Origem,Destino,Distância (km),Modelo do Ônibus
+123,João,São Paulo,Rio de Janeiro,430,Mercedes
+456,Maria,Rio de Janeiro,São Paulo,420,Agrale
+789,Carlos,Belo Horizonte,São Paulo,584,Iveco
+321,Ana,São Paulo,Campinas,99,Volvo
+654,Lucas,Rio de Janeiro,Salvador,1220,Mercedes
+987,Laura,Porto Alegre,Florianópolis,477,Agrale
+741,Gabriel,São Paulo,Santos,79,Iveco
+852,Rafaela,Belo Horizonte,Vitória,515,Volvo
+963,Pedro,Brasília,Goiânia,209,Mercedes
+159,Carolina,Recife,Natal,311,Agrale
+111,Marcos,São Paulo,Curitiba,888,Iveco
+222,Daniela,Salvador,Recife,665,Volvo
+333,Rogerio,Rio de Janeiro,São Paulo,435,Mercedes
+444,Silvia,Campinas,São Paulo,50,Agrale
+555,Roberto,Porto Alegre,Florianópolis,400,Iveco
+666,Patricia,Brasília,Goiânia,215,Volvo
+777,Isabela,São Paulo,Santos,85,Mercedes
+888,Felipe,Belo Horizonte,São Paulo,602,Agrale
+999,Lucas,Belo Horizonte,Vitória,500,Iveco
+000,Carolina,Recife,Natal,250,Volvo
+,,,,,
