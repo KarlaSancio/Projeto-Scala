@@ -1,7 +1,9 @@
 import java.io.FileReader
 import org.apache.commons.csv.CSVFormat
+
 import scala.collection.JavaConverters._
 import scala.collection.mutable.ListBuffer
+import scala.util.control.Breaks.break
 
 object Main {
   def main(args: Array[String]): Unit = {
@@ -12,14 +14,18 @@ object Main {
 
     val lista = ListBuffer[LinhaOnibus]()
     for (record <- csvRecords) {
-      val linha = record.get("Número da Linha").toInt
-      val motorista = record.get("Nome do Motorista")
-      val origem = record.get("Origem")
-      val destino = record.get("Destino")
-      val distancia = record.get("Distância (km)").toDouble
-      val modelo = record.get("Modelo do Ônibus")
-      val linhaOnibus = new LinhaOnibus(linha, motorista, origem, destino, distancia,modelo)
-      lista += linhaOnibus // Sobrecarga do operador "+="
+
+      if (record.get("Número da Linha").nonEmpty) {
+        val linha = record.get("Número da Linha").toInt
+        val motorista = record.get("Nome do Motorista")
+        val origem = record.get("Origem")
+        val destino = record.get("Destino")
+        val distancia = record.get("Distância (km)").toDouble
+        val modelo = record.get("Modelo do Ônibus")
+        val linhaOnibus = new LinhaOnibus(linha, motorista, origem, destino, distancia, modelo)
+        lista += linhaOnibus // Sobrecarga do operador "+="
+      }
+
     }
 
     lista.foreach(println)
